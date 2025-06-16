@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, Suspense } from "react";
+import { useState, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import SortSelect from "../SortSelect/SortSelect";
 import CarPagination from "../CarPagination/CarPagination";
@@ -58,12 +58,10 @@ export default function CarsPage() {
   };
 
   return (
-    <Suspense fallback={<div>Загрузка...</div>}>
-      <div className="container">
-        <SortSelect />
-        <CarList cars={cars} isLoading={isLoading} error={error} />
-        <CarPagination totalPages={totalPages} currentPage={Number(page)} />
-      </div>
-    </Suspense>
+    <div className="container">
+      <SortSelect />
+      <CarList cars={cars} isLoading={isLoading} error={error} />
+      <CarPagination totalPages={totalPages} currentPage={Number(page)} />
+    </div>
   );
 }
