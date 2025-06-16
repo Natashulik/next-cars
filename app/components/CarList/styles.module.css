@@ -1,0 +1,45 @@
+.cardList {
+  align-items: stretch;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardBottom {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+.iconBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: rgb(235, 244, 252);
+  cursor: pointer;
+}
+
+.heart {
+  color: #0d6efd;
+}
+
+.buyBtn {
+  margin-left: auto;
+}
+
+.list-item {
+  margin-bottom: 5px;
+}
